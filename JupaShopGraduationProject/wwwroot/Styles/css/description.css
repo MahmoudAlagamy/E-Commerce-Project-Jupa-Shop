@@ -1,0 +1,114 @@
+/*  #F29200 برتقالى
+    #000000 اسود 
+    #F7F7F7 رمادى 
+    #FFFFFF ابيض
+*/
+
+/*Start Content*/
+.product_content{
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.product_content .container{
+  width: 100%;
+  padding-right: 1%;
+  padding-left: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.top_side{
+  margin-bottom: 3%;
+  border-bottom: 1px solid #eee;
+}
+.top_side .heading h2{
+  float: right;
+  font-size: 28px;
+  font-weight: 400;
+  color: #1e1e1e;
+  margin-bottom: 1%;
+}
+.right_side .img img{
+  width: 100%;
+}
+.left_content{
+  text-align: justify;
+}
+.left_content .price{
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.left_content .button1 , .button2{
+  background-color: #F68B1E;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  float: right;
+  border-radius: 5px;
+}
+
+.left_content .button2{
+  float: right;
+}
+
+.left_content .button1:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left_content .button2:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left_content .slide_img{
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  float: right;
+}
+
+.description .heading2{
+  text-align: right;
+  margin-top: 25px;
+}
+.description .title{
+  text-align: right;
+}
+.description .img1{
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.img1 img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container .colors img{
+  width: 32%;
+}
+
+.description2{
+  width: 100%;
+}
+.description2 .header2{
+  text-align: right;
+}
+.content2 .right_side, .left_side{
+  float: right;
+  text-align: right;
+}
+.content2 .right_side p{
+  border-bottom: 1px solid #000000;
+}
+.content2 .left_side p{
+  border-bottom: 1px solid #000000;
+}
+/*End Content*/
+

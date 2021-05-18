@@ -1,0 +1,106 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: cursive;
+}
+.box{
+    max-width: 400px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border: 2px solid #fff; 
+    border-radius: 0px 70px 0px 70px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+    box-shadow: 20px 20px 8px rgba(0,0,0,0.4);
+    direction: rtl;
+}
+.box h2{
+    border: 5px solid #ffffff30;
+    border-radius: 0px 70px 0px 70px;
+    padding: 10px;
+    color: #FBD3CC;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.box input[type=text],input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(0,0,0,0.10);
+    color: #fff;
+    font-family: serif;
+    
+}
+.box input[type=button]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 25px;
+    opacity: 0.9;
+    background-color:  #F29200;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+.box input[type=button]:hover{
+    background-color: C72B0F;
+    transition: 400ms;
+}
+
+/*checkbox button*/
+
+.list a{
+    color: #5993DF;
+    direction: rtl;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px solid #ffffff30;
+    border-radius: 10px;
+}
+.list a:hover{
+    color: #C8793B;
+}
+
+/*
+.list input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+.list label{
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #F29200;
+    float: right;
+    display: block;
+    position: absolute;
+    margin-right: 30px;
+    
+}
+.list label:hover{
+    color: aqua;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+
+}*/
+

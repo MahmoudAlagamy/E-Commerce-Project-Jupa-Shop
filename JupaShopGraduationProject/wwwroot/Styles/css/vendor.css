@@ -1,0 +1,79 @@
+.vendor-name{
+    width: 100%;
+    text-align: right;
+}
+.des {
+    font-size: 33px;
+    text-align: right;
+    font-weight: bold;
+}
+.nam{
+    font-size: 28px;
+    text-align: right;
+}
+
+.vendor-img img{
+    width: 229;
+    height: 229px;
+    border-radius: 50%;
+}
+.prod-kind{
+    width: 100%;
+    text-align: right;
+    direction: rtl;
+}
+.prod-kind select{
+    height: 40px;
+    border: solid 2px#efefef;
+    border-radius: 10px;
+}
+.prod-kind label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.prod-kind textarea{
+    display: block;
+    width: 100%;
+    border: solid 2px #efefef;
+    border-radius: 20px;
+    padding: 10px;
+}
+.img-up{
+    width: 100%;
+}
+.img-up img{
+    float: right;
+    width: 10%;
+}
+input[type="file"]{
+    float: right;
+    direction: rtl;
+    border: solid 1px #efefef;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input[type="numper"]{
+    border: solid 1px #efefef;
+    border-radius: 7px;
+    padding: 4px;
+}
+input[type="text"]{
+    border: solid 1px #efefef;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+
+@media(max-width:1000px){
+    .des{
+        font-size: 20px;
+    }
+    .nam{
+        font-size: 18px;
+    }
+    .vendor-img img{
+        
+        height: 150px;
+    }
+
+}

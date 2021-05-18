@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/Styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/Styles/css/Layout/style .css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/Styles/css/wow.css">
+</head>
+<body>
+    <!-- start Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container" style=" background-color: #f9fafb;">
+            <!--<a class="navbar-brand" asp-controller="Home" asp-action="Index">Jupa Shop</a>-->
+
+            <div class="logo">
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/Images/Logo/JupaLogo.png" alt="logo">
+                </a>
+            </div>
+
+            <form class="form-inline">
+                <input class="form-control border-warning searchStyl01" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning searchStyl02" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="navbar-brand font-weight-bold active" asp-controller="Home" asp-action="Index">JUPA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Privacy">ContactUs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown08">
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Account Setting</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-heart"></i> Favourits</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Privacy">
+                            <i class="fas fa-shopping-cart">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true"><span class="flag-icon flag-icon-eg"></span></a>
+                        <div class="dropdown-menu flags" aria-labelledby="dropdown01" style="width:30px; height:auto;">
+                            <a class="dropdown-item griditem" href="#fr"><span class="flag-icon flag-icon-us"></span></a>
+                            <a class="dropdown-item griditem" href="#fr"><span class="flag-icon flag-icon-fr"></span></a>
+                            <a class="dropdown-item griditem" href="#it"><span class="flag-icon flag-icon-it"></span></a>
+                            <a class="dropdown-item griditem" href="#ru"><span class="flag-icon flag-icon-ru"></span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end Navbar -->
+    <!--Start Button Group-->
+    <div class="container">
+        <div class="btn-group btn-group-justified">
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-home"></i> Home</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-mobile-alt"></i> Mobiles & Tablets</a>
+            <a asp-action="Computers" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-desktop"></i> Computers</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-laptop"></i> Laptop</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-camera"></i> Electronics</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-male"></i> Clothes</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-utensils"></i> Kitchen</a>
+            <a asp-action="Mobiles" asp-controller="Home" class="btn btn-primary" target="_self"><i class="fas fa-truck"></i> Follow Your Orders</a>
+        </div>
+    </div>
+    <hr />
+    <!--End Button Group-->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--Start Footer-->
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" placeholder="Email address" />
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">POPULAR SEARCHES</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Cameras</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Electronics</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">TVs</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Supermarket</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Appliances</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Watches</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Mobile Phones</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Printers And Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Laptop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">MY ACCOUNT</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Log In / Register</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">My Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">My Orders</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">My Addresses</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Wish Lists</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Account Settings</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Account Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">SELLING ON JUPA.COM</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Sell on Jupa.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">How It Works</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Selling Policies</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Seller Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Fulfilled by Souq</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">BUYING ON JUPA.COM</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">How to Buy</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Advertise with us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://www.facebook.com/mahmoud.alagamy.7">Mahmoud Alagamy</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--End Footer-->
+
+    <script src="~/Scripts/Jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/Popper/popper.min.js"></script>
+    <script src="~/Scripts/Wow/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+    <script src="~/Scripts/Bootstrap/bootstrap.min.js"></script>
+    @*@await RenderSectionAsync("Scripts", required: false)*@
+</body>
+</html>

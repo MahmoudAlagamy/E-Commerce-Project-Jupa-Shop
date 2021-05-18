@@ -1,0 +1,51 @@
+
+.costomer_sv{
+    overflow-x: auto;
+}
+
+h1{
+    font-style: italic;
+    text-align: center;
+    color: #F29200;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-weight: bold;
+}
+th{
+    background-color: #F29200;
+    color: white;
+}
+th, td{
+    border: 2px solid #ddd;
+    padding: 15px;
+}
+.data_header{
+    text-align: center;
+}
+.btn_data1{
+    width: 16%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn_data2{
+    width: 16%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+button a{
+    text-decoration: none;
+    color:  #F29200;
+}
+.search_inbut{
+    width: 30%;
+    height: 30px;
+    border: 1px solid #000000;
+    text-align: center;
+}
